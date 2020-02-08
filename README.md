@@ -26,8 +26,6 @@
 wget http://raw.githubusercontent.com/limitrinno/docker/master/alirepo.sh && chmod +x alirepo.sh && ./alirepo.sh
 ```
 
-
-
 #  脚本安装地址
 
 ## 脚本安装地址1--http
@@ -57,3 +55,8 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/aria2.sh && chmod +x aria2.sh && bash aria2.sh
 ```
 
+## Netdata
+
+```
+bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+```
