@@ -42,3 +42,18 @@ wget http://raw.githubusercontent.com/limitrinno/docker/master/install.sh && chm
 wget --no-check-certificate https://raw.githubusercontent.com/limitrinno/docker/master/install.sh && chmod +x install.sh && ./install.sh
 ```
 
+
+# 其他脚本
+
+##  SSR doubi 一键脚本
+
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
+```
+
+## Aira2 一键脚本
+
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/aria2.sh && chmod +x aria2.sh && bash aria2.sh
+```
+
