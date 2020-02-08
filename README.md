@@ -1,4 +1,3 @@
-[TOC]
 # docker一键安装脚本
 
 ## Docker安装说明
