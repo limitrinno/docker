@@ -60,3 +60,9 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 ```
 bash <(curl -Ss https://my-netdata.io/kickstart.sh)
 ```
+
+## superbench
+
+```
+wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
+```
