@@ -61,7 +61,7 @@ fi
 
 #外部脚本-SSR
 ssrinstall(){
-checkaria=`ls . | grep aria2.sh | wc -l`
+checkaria=`ls . | grep ssr.sh | wc -l`
 if [ $checkaria -eq 0 ]
 then
 	wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
