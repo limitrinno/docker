@@ -136,7 +136,7 @@ case $num in
 	;;
 
 	3)
-	if [ $checkdockerinstall -eq 1 ]
+	if [ $checkdockerinstall -eq 0 ]
 	then
 		dockerinstall
 	else
