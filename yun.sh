@@ -61,8 +61,8 @@ fi
 
 #外部脚本-SSR
 ssrinstall(){
-checkaria=`ls . | grep ssr.sh | wc -l`
-if [ $checkaria -eq 0 ]
+checkssr=`ls . | grep ssr.sh | wc -l`
+if [ $checkssr -eq 0 ]
 then
 	wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 else
@@ -73,6 +73,17 @@ fi
 #Netdata官方脚本
 jkinstall(){
 	bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+}
+
+#外部脚本-V2ray一键安装
+v2rayinstall(){
+checkv2ray=`ls . | grep install.sh | wc -l`
+if [ $checkv2ray -eq 0 ]
+then
+	wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
+else
+	sh install.sh
+fi
 }
 
 
@@ -91,6 +102,7 @@ echo "4.实验-检测Wget是否安装"
 echo "5.一键安装Aria2-外部脚本"
 echo "6.一键安装SSR-外部脚本"
 echo "7.一键安装Netdata-超炫酷的Linux监控软件"
+echo "8.一键安装V2ray-外部脚本"
 printf "============================\n"
 echo -e "请输入你需要执行的脚本编号: \c"
 read num
@@ -146,6 +158,10 @@ case $num in
 
 	7)
 	jkinstall
+	;;
+
+	8)
+	v2rayinstall
 	;;
 
 	*) 
