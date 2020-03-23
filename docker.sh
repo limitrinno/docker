@@ -25,7 +25,7 @@ menu
 
 while :
 do
-	read -p "input num:" action
+	read -p "请输入对应的编号:" action
 	case $action in
 	1)
 	if [ $check_docker -ne 0 ];then
